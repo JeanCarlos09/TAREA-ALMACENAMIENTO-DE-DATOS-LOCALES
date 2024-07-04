@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/fondo.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px;
+    /* Establece un ancho máximo de 800 píxeles para el contenedor. */
+    margin: 50px auto;
+    /* Centra el contenedor horizontalmente y establece un margen de 50 píxeles arriba y abajo. */
+    background-color: #d3d1d1;
+    /* Establece el color de fondo del contenedor a un tono gris claro. */
+    padding: 20px;
+    /* Agrega un relleno de 20 píxeles dentro del contenedor. */
+    border-radius: 8px;
+    /* Redondea las esquinas del contenedor con un radio de 8 píxeles. */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra sutil alrededor del contenedor para darle profundidad. */
+}
+
+/* Estilos para el encabezado <h1> */
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    /* Establece la fuente del encabezado a 'Times New Roman', con fuentes alternativas Times y serif. */
+    text-align: center;
+    /* Centra el texto del encabezado horizontalmente. */
+}
+
+/* Estilos para los elementos con clase .columna */
+.columna {
+    display: inline-block;
+    /* Hace que los elementos se alineen en línea y se comporten como bloques en línea. */
+    vertical-align: top;
+    /* Alinea verticalmente los elementos en la parte superior. */
+    width: 45%;
+    /* Establece el ancho de los elementos a 45% del contenedor padre. */
+}
+
+/* Estilos para los elementos con clase .grupos */
+.grupos {
+    margin-bottom: 20px;
+    /* Establece un margen inferior de 20 píxeles entre los grupos de elementos. */
+}
+
+/* Estilos para las etiquetas <label> */
+label {
+    font-weight: bold;
+    /* Hace que el texto de las etiquetas sea negrita. */
+    display: block;
+    /* Hace que las etiquetas se comporten como bloques, ocupando todo el ancho disponible. */
+}
+
+/* Estilos para los elementos con clase .input */
+.input {
+    width: calc(100% - 10px);
+    /* Establece el ancho de los elementos al 100% del contenedor padre menos 10 píxeles (espacio para bordes). */
+    padding: 10px;
+    /* Agrega un relleno de 10 píxeles dentro de los elementos. */
+    border: 1px solid #9b9191;
+    /* Establece un borde sólido de 1 píxel de grosor con un color gris oscuro. */
+    border-radius: 4px;
+    /* Redondea las esquinas de los elementos con un radio de 4 píxeles. */
+    box-sizing: border-box;
+    /* Asegura que el ancho y alto de los elementos incluyan el padding y el borde en el cálculo. */
+}
+
+/* Estilos para el botón de registro */
+.registrar {
+    width: 100%;
+    /* Establece el ancho del botón al 100% del contenedor padre. */
+    padding: 10px;
+    /* Agrega un relleno de 10 píxeles dentro del botón. */
+    border: none;
+    /* Elimina el borde predeterminado del botón. */
+    border-radius: 4px;
+    /* Redondea las esquinas del botón con un radio de 4 píxeles. */
+    background-color: #aa0404;
+    /* Establece el color de fondo del botón a un tono rojo oscuro. */
+    color: #fff;
+    /* Establece el color del texto del botón a blanco. */
+    font-size: 16px;
+    /* Establece el tamaño de la fuente del texto del botón a 16 píxeles. */
+    cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón. */
+}
+
+/* Estilos para el botón de registro en estado hover */
+.registrar:hover {
+    background-color: #ff1e00;
+    /* Cambia el color de fondo del botón a un rojo más brillante cuando se pasa el cursor sobre él. */
+}
+
+/* Estilos para los mensajes de error */
+.error {
+    color: red;
+    /* Establece el color del texto de los mensajes de error a rojo. */
+    font-size: 0.9em;
+    /* Establece el tamaño de la fuente de los mensajes de error a 0.9em (tamaño ligeramente más pequeño que el tamaño de fuente base). */
+}

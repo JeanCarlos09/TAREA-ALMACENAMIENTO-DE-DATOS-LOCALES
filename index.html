@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declara el tipo de documento como HTML5 y el idioma del contenido como inglés. -->
+
+<head>
+    <!-- Comienza la sección del encabezado del documento. -->
+    
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres del documento a UTF-8, que soporta casi todos los caracteres y símbolos. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la ventana gráfica para que el ancho de la página se ajuste al ancho del dispositivo, garantizando que el sitio sea responsive. -->
+    
+    <title>Registro de Clientes</title>
+    <!-- Define el título de la página, que se muestra en la pestaña del navegador. -->
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlaza una hoja de estilos externa llamada "styles.css", que contiene estilos CSS adicionales para la página. -->
+
+</head>  <!-- Finaliza la sección del encabezado del documento. -->
+<body>
+    <!-- Comienza el cuerpo del documento HTML, donde se coloca el contenido visible de la página. -->
+    
+    <div class="container">
+        <!-- Crea un contenedor con la clase "container", que generalmente se utiliza para aplicar estilos y centrar el contenido. -->
+        
+        <h1>Registro de Cliente</h1>
+        <!-- Muestra el encabezado principal de la página con el texto "Registro de Cliente". -->
+        
+        <form id="registroForm" action="#" method="POST">
+            <!-- Crea un formulario con el identificador "registroForm", que se envía mediante el método POST. El atributo action="#" indica que el formulario no se enviará a ninguna URL específica. -->
+            
+            <div class="columna">
+                <!-- Crea un contenedor con la clase "columna" para organizar el contenido del formulario en columnas. -->
+                
+                <div class="grupos">
+                    <!-- Crea un contenedor con la clase "grupos" para agrupar un conjunto de elementos de formulario relacionados. -->
+                    
+                    <label for="nombre">Nombre:</label>
+                    <!-- Etiqueta para el campo de entrada de nombre. El atributo for="nombre" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="text" id="nombre" name="nombre" class="input" placeholder="Nombre">
+                    <!-- Campo de entrada de texto para el nombre. El atributo id="nombre" es utilizado para la asociación con la etiqueta, y el atributo name="nombre" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="nombreError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de nombre. El atributo id="nombreError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="apellido">Apellido:</label>
+                    <!-- Etiqueta para el campo de entrada de apellido. El atributo for="apellido" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="text" id="apellido" name="apellido" class="input" placeholder="Apellido">
+                    <!-- Campo de entrada de texto para el apellido. El atributo id="apellido" es utilizado para la asociación con la etiqueta, y el atributo name="apellido" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="apellidoError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de apellido. El atributo id="apellidoError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="email">Email:</label>
+                    <!-- Etiqueta para el campo de entrada de email. El atributo for="email" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="email" id="email" name="email" class="input" placeholder="Email">
+                    <!-- Campo de entrada de correo electrónico. El atributo id="email" es utilizado para la asociación con la etiqueta, y el atributo name="email" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="emailError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de email. El atributo id="emailError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <!-- Etiqueta para el campo de entrada de teléfono. El atributo for="telefono" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="tel" id="telefono" name="telefono" class="input" placeholder="Telefono">
+                    <!-- Campo de entrada para el número de teléfono. El atributo id="telefono" es utilizado para la asociación con la etiqueta, y el atributo name="telefono" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="telefonoError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de teléfono. El atributo id="telefonoError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="direccion">Dirección:</label>
+                    <!-- Etiqueta para el campo de entrada de dirección. El atributo for="direccion" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="text" id="direccion" name="direccion" class="input" placeholder="Dirección">
+                    <!-- Campo de entrada de texto para la dirección. El atributo id="direccion" es utilizado para la asociación con la etiqueta, y el atributo name="direccion" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="direccionError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de dirección. El atributo id="direccionError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="ocupacion">Ocupación:</label>
+                    <!-- Etiqueta para el campo de entrada de ocupación. El atributo for="ocupacion" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="text" id="ocupacion" name="ocupacion" class="input" placeholder="Ocupación">
+                    <!-- Campo de entrada de texto para la ocupación. El atributo id="ocupacion" es utilizado para la asociación con la etiqueta, y el atributo name="ocupacion" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="ocupacionError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de ocupación. El atributo id="ocupacionError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+            </div>
+            <!-- Finaliza el contenedor con la clase "columna". -->
+
+            <div class="columna">
+                <!-- Crea un contenedor con la clase "columna" para organizar el contenido del formulario en columnas. -->
+
+                <div class="grupos">
+                    <!-- Crea un contenedor con la clase "grupos" para agrupar un conjunto de elementos de formulario relacionados. -->
+                    
+                    <label for="ciudad">Ciudad:</label>
+                    <!-- Etiqueta para el campo de entrada de ciudad. El atributo for="ciudad" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="text" id="ciudad" name="ciudad" class="input" placeholder="Ciudad">
+                    <!-- Campo de entrada de texto para la ciudad. El atributo id="ciudad" es utilizado para la asociación con la etiqueta, y el atributo name="ciudad" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="ciudadError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de ciudad. El atributo id="ciudadError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="codigo_postal">Código Postal:</label>
+                    <!-- Etiqueta para el campo de entrada de código postal. El atributo for="codigo_postal" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="text" id="codigo_postal" name="codigo_postal" class="input" placeholder="Codigo postal">
+                    <!-- Campo de entrada de texto para el código postal. El atributo id="codigo_postal" es utilizado para la asociación con la etiqueta, y el atributo name="codigo_postal" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="codigoPostalError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de código postal. El atributo id="codigoPostalError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="pais">País:</label>
+                    <!-- Etiqueta para el campo de entrada de país. El atributo for="pais" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="text" id="pais" name="pais" class="input" placeholder="Pais">
+                    <!-- Campo de entrada de texto para el país. El atributo id="pais" es utilizado para la asociación con la etiqueta, y el atributo name="pais" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="paisError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de país. El atributo id="paisError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <!-- Etiqueta para el campo de entrada de fecha de nacimiento. El atributo for="fecha_nacimiento" asocia la etiqueta con el campo de entrada correspondiente. -->
+                    
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="input">
+                    <!-- Campo de entrada para la fecha de nacimiento. El atributo id="fecha_nacimiento" es utilizado para la asociación con la etiqueta, y el atributo name="fecha_nacimiento" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                    
+                    <span class="error" id="fechaNacimientoError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de entrada de fecha de nacimiento. El atributo id="fechaNacimientoError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="genero">Género:</label>
+                    <!-- Etiqueta para el campo de selección de género. El atributo for="genero" asocia la etiqueta con el campo de selección correspondiente. -->
+                    
+                    <select id="genero" name="genero" class="input">
+                        <!-- Campo de selección para el género. El atributo id="genero" es utilizado para la asociación con la etiqueta, y el atributo name="genero" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                        <option value="masculino">Masculino</option>
+                        <!-- Opción en el campo de selección para "Masculino". -->
+                        <option value="femenino">Femenino</option>
+                        <!-- Opción en el campo de selección para "Femenino". -->
+                        <option value="otro">Otro</option>
+                        <!-- Opción en el campo de selección para "Otro". -->
+                    </select>
+                    
+                    <span class="error" id="generoError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de selección de género. El atributo id="generoError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+                <div class="grupos">
+                    <!-- Crea otro contenedor con la clase "grupos" para el siguiente conjunto de elementos de formulario. -->
+                    
+                    <label for="estado_civil">Estado Civil:</label>
+                    <!-- Etiqueta para el campo de selección de estado civil. El atributo for="estado_civil" asocia la etiqueta con el campo de selección correspondiente. -->
+                    
+                    <select id="estado_civil" name="estado_civil" class="input">
+                        <!-- Campo de selección para el estado civil. El atributo id="estado_civil" es utilizado para la asociación con la etiqueta, y el atributo name="estado_civil" es el nombre del campo que se enviará con el formulario. La clase "input" se utiliza para aplicar estilos. -->
+                        <option value="soltero">Soltero</option>
+                        <!-- Opción en el campo de selección para "Soltero". -->
+                        <option value="casado">Casado</option>
+                        <!-- Opción en el campo de selección para "Casado". -->
+                        <option value="divorciado">Divorciado</option>
+                        <!-- Opción en el campo de selección para "Divorciado". -->
+                        <option value="viudo">Viudo</option>
+                        <!-- Opción en el campo de selección para "Viudo". -->
+                    </select>
+                    
+                    <span class="error" id="estadoCivilError"></span>
+                    <!-- Contenedor para mostrar mensajes de error asociados al campo de selección de estado civil. El atributo id="estadoCivilError" permite que JavaScript acceda a este elemento para mostrar errores específicos. -->
+                </div>
+                
+            </div>
+            <!-- Finaliza el contenedor con la clase "columna". -->
+            
+            <input type="submit" value="Registrar Cliente" class="registrar">
+            <!-- Botón de envío del formulario con el texto "Registrar Cliente". La clase "registrar" se utiliza para aplicar estilos al botón. -->
+            
+        </form>
+        <!-- Finaliza el formulario. -->
+        
+    </div>
+    <!-- Finaliza el contenedor con la clase "container". -->
+
+<script src="validacion.js"></script>
+</body>
+<!-- Finaliza el cuerpo del documento HTML. -->
+
+</html>
